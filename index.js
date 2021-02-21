@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-
 const connect = require("./config/connect");
 const session = require("express-session");
 const cotegoriesController = require("./categories/categoriesController");
