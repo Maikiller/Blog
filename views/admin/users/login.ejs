@@ -1,0 +1,39 @@
+<%- include("../../partials/header.ejs")%>
+
+
+<div class="container">
+  <div class="card mt-5">
+    <div class="card-body">
+      <div class="card-header">Login</div>
+      <form action="/authenticate" method="POST">
+        <input
+          class="form-control"
+          type="email"
+          name="email"
+          placeholder="email@exemplo.com"
+          required="required"
+          value="10202408@friday.com"
+        />
+        <br />
+        <input
+          type="password"
+          name="password"
+          id="input"
+          class="form-control"
+          required="required"
+          placeholder="********************"
+          value="Escelsa!2080*"
+        />
+        <br />
+        <button
+          type="submit"
+          class="form-control btn btn-primary btn-lg btn-block"
+        >
+          Logar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include("../../partials/footer.ejs")%>

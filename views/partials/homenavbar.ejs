@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link navbar-dark bg-primary" href="/"> FRIDAY </a>
+      </li>
+      <% categories.forEach(category =>{ %>
+      <li class="nav-item">
+        <a
+          class="nav-link navbar-dark bg-primary"
+          href="/category/<%= category.slug %> "
+        >
+          <%= category.title %>
+        </a>
+      </li>
+      <% }) %>
+    </ul>
+  </div>
+  <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-auto">
+    <li class="nav-item">
+      <a class="nav-link navbar-dark bg-primary" href="/login"> Logar </a>
+    </li>
+  </ul>
+</nav>
